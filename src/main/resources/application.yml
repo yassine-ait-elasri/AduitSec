@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_DATABASE_URL:mongodb://localhost:27017/auditSec}
+      auto-index-creation: true
+  docker:
+    compose:
+      lifecycle-management: start-only
+springdoc:
+  pathsToMatch: /api/**
